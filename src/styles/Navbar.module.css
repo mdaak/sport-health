@@ -1,0 +1,106 @@
+.Navbar {
+    max-width: 1246px;
+    height: 50px;
+    /* position: fixed; */
+    position: absolute;
+    top: 42px;
+    left: 95px;
+    right: 95px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  .Logo{
+    padding: 0;
+    border-radius: 10px;
+    background-color: #6765F0;
+    border: none;
+    color: #fff;
+    height: 38px;
+    width: 67px;
+    font-weight: 600;
+  }
+  .LogoText{
+    color: #6765F0;
+    margin-left: 11px;
+    font-weight: 600;
+  }
+  .NavbarLeft{
+    display: flex;
+    align-items: center;
+  }
+  .NavbarRight{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .NavbarLink {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .NavbarBtn {
+    /* width: 114px;
+    height: 50px; */
+    border: none;
+    border-radius: 10px;
+    background-color: #264373;
+    cursor: pointer;
+    box-shadow: 0px 20px 80px;
+    /* left: 1227px;
+    top: 42px; */
+    color: #fff;
+    padding: 13px 32px 13px 35px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  
+  .NavbarBtn:hover {
+    background-color: #0069d9;
+  }
+
+  .CollapsButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0px;
+    display: none;
+  }
+  .CollapsBar{
+    height: 1px;
+    width: 40px;
+    /* margin-bottom: 10px; */
+    border: 1px solid black;
+  }
+
+@media (max-width:1024px) {
+  .NavbarRight{
+    display: none;
+  }
+  .CollapsButton{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+}
+@media (max-width:768px) {
+  .Navbar{
+    max-width: 1246px;
+    height: 50px;
+    position: absolute;
+    top: 42px;
+    left: 38px;
+    right: 38px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}

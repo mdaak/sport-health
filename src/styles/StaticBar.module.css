@@ -1,0 +1,51 @@
+.StaticBar{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-image: linear-gradient(to right, #6462F0 , #9190E9);
+    min-height: 274px;
+    border-radius: 30px;
+    justify-content: space-between;
+    padding: 87px 85px 87px 85px;
+    flex-wrap: wrap;
+    margin: 80px auto;
+    max-width: 1246px;
+}
+.staticBarLogo{
+    background-color: #9c9ae4;
+    border-radius: 5px;
+    padding: 20px;
+}
+@media (max-width:1288px) {
+    .StaticBar{
+        grid-template-columns: auto;
+        grid-gap: 150px;
+        justify-content: space-around;
+    }
+    .barItem{
+        display: grid;
+        grid-template-columns: auto auto;
+        border: 1px solid red;
+    }
+}
+@media (max-width:625px) {
+    .StaticBar{
+        grid-template-columns: auto;
+        grid-gap: 60px;
+        justify-content: space-around;
+        padding: 36px;
+    }
+}
+
+.barItem{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+}
+.barText{
+    padding: 0 25px;
+    max-width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
